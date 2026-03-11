@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gouri Papagari | Cybersecurity Portfolio</title>
+
+<style>
+:root{
+  --primary:#6d28d9;
+  --secondary:#22d3ee;
+  --accent:#f472b6;
+  --dark:#0f172a;
+  --light:#f8fafc;
+  --muted:#64748b;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:"Segoe UI", Arial, sans-serif;
+  background:linear-gradient(120deg,#f1f5ff,#fdf2f8);
+  color:var(--dark);
+  line-height:1.7;
+}
+
+/* NAVBAR */
+nav{
+  background:white;
+  padding:16px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+}
+
+nav strong{
+  font-size:20px;
+  color:var(--primary);
+}
+
+nav a{
+  margin-left:18px;
+  text-decoration:none;
+  color:var(--dark);
+  font-size:14px;
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* HERO */
+header{
+  padding:100px 8%;
+  text-align:center;
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+}
+
+header h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:18px;
+  max-width:650px;
+  margin:auto;
+  opacity:0.95;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 26px;
+  background:white;
+  color:var(--primary);
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 8%;
+}
+
+h2{
+  font-size:28px;
+  margin-bottom:25px;
+  color:var(--primary);
+}
+
+/* CARDS */
+.card{
+  background:white;
+  padding:26px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:25px;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  background:linear-gradient(135deg,#ede9fe,#cffafe);
+  color:var(--primary);
+  padding:10px 16px;
+  margin:6px;
+  border-radius:25px;
+  font-size:14px;
+  font-weight:500;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.project{
+  background:white;
+  padding:24px;
+  border-radius:16px;
+  box-shadow:0 12px 32px rgba(0,0,0,0.1);
+  border-top:5px solid var(--accent);
+}
+
+.project h3{
+  margin-top:0;
+  color:var(--primary);
+}
+
+/* CONTACT */
+.contact-card{
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  color:white;
+  padding:30px;
+  border-radius:16px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  background:var(--dark);
+  color:#cbd5f5;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <strong>Gouri Papagari</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Aspiring Cybersecurity Engineer</h1>
+  <p>
+    Computer Science Engineering student passionate about cybersecurity,
+    ethical hacking, and secure system design.
+  </p>
+  <a class="btn" href="#projects">Explore My Work</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    I am a motivated CSE student with hands-on experience in cybersecurity
+    projects, ethical hacking concepts, and threat detection. I actively
+    participate in CTFs and workshops to strengthen my practical skills.
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <strong>B.Tech – Computer Science Engineering</strong><br>
+    BVRIT | V Raju Institute of Technology, Narsapur<br>
+    2023 – 2027 | CGPA: 7.9
+  </div>
+
+  <div class="card">
+    <strong>Intermediate (TSBIE)</strong><br>
+    Sri Vasishtha Junior College, Hyderabad<br>
+    2023 | Marks: 901
+  </div>
+
+  <div class="card">
+    <strong>SSC</strong><br>
+    Bhrungi International School, Vikarabad<br>
+    2021 | CGPA: 10.0
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>Cybersecurity</span>
+    <span>Ethical Hacking</span>
+    <span>Phishing Detection</span>
+    <span>Network Traffic Analysis</span>
+    <span>Encrypted Traffic</span>
+    <span>Honeypots</span>
+    <span>Python</span>
+    <span>C</span>
+    <span>SQL</span>
+    <span>DSA</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="project">
+      <h3>Insider Threat Detection</h3>
+      <p>
+        Designed a dynamic access-control system to detect insider threats
+        by monitoring user behavior and deploying honeypots.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Encrypted Traffic Threat Detection</h3>
+      <p>
+        Implemented threat detection techniques on encrypted network traffic
+        without decrypting sensitive data.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Phishing Detection System</h3>
+      <p>
+        Built a phishing detection model to identify malicious websites
+        using URL patterns and behavioral indicators.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-card">
+    📧 papagarigouri08@gmail.com<br><br>
+    📞 +91 7680041068<br><br>
+    📍 Hyderabad, India
+  </div>
+</section>
+
+<footer>
+  © 2026 Gouri Papagari · Cybersecurity Portfolio
+</footer>
+
+</body>
+</html>
